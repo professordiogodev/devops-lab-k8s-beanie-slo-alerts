@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="341" viewBox="0 0 1000 341" role="img" aria-label="Monitoring on Kubernetes: The Alert That Pages You">
+<defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#431407"/><stop offset="1" stop-color="#c2410c"/></linearGradient><radialGradient id="glow" cx=".85" cy=".5" r=".6"><stop offset="0" stop-color="#a7f3d0" stop-opacity=".28"/><stop offset="1" stop-color="#a7f3d0" stop-opacity="0"/></radialGradient></defs>
+<rect width="1000" height="341" rx="18" fill="url(#bg)"/><rect width="1000" height="341" rx="18" fill="url(#glow)"/>
+<circle cx="60" cy="40" r="3" fill="#a7f3d0" opacity=".7"><animate attributeName="opacity" values=".2;.9;.2" dur="3s" repeatCount="indefinite"/></circle>
+<text x="48" y="64" font-size="14" letter-spacing="3" fill="#a7f3d0" font-family="Segoe UI,Helvetica,Arial,sans-serif" font-weight="700">DEVOPS BOOTCAMP · LAB</text>
+<text x="48" y="112" font-size="36" font-weight="800" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">Monitoring on Kubernetes:</text>
+<text x="48" y="155" font-size="36" font-weight="800" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">The Alert That Pages You</text>
+<text x="48" y="185" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">Beanie runs and nobody is looking. Install the Prometheus stack, make</text>
+<text x="48" y="207" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">it scrape all five services, turn &quot;99 percent of orders must work&quot;</text>
+<text x="48" y="229" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">into a burn-rate alert, break menu on purpose and prove the page</text>
+<text x="48" y="251" font-size="15" fill="#e2e8f0" opacity=".92" font-family="Segoe UI,Helvetica,Arial,sans-serif">reaches the receiver before a customer complains.</text>
+<rect x="48" y="283" width="122" height="32" rx="16" fill="#ffffff" fill-opacity=".14" stroke="#a7f3d0" stroke-opacity=".7"/><text x="62" y="304" font-size="14" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">150-180 min</text>
+<rect x="182" y="283" width="724" height="32" rx="16" fill="#ffffff" fill-opacity=".14" stroke="#a7f3d0" stroke-opacity=".7"/><text x="196" y="304" font-size="14" fill="#ffffff" font-family="Segoe UI,Helvetica,Arial,sans-serif">Cost: free on a local cluster with 4 CPUs and 8 GB, or the cluster of the EKS lab</text>
+<g transform="translate(750,70)">
+<path d="M12 180 H210 M12 180 V20" stroke="#a7f3d0" stroke-opacity=".6" stroke-width="3" fill="none"/>
+<rect x="30" y="180" width="24" height="0" rx="4" fill="#a7f3d0" opacity=".9"><animate attributeName="height" values="0;50;50;0" keyTimes="0;.4;.85;1" dur="5s" begin="-2.20s" repeatCount="indefinite"/><animate attributeName="y" values="180;130;130;180" keyTimes="0;.4;.85;1" dur="5s" begin="-2.20s" repeatCount="indefinite"/></rect>
+<rect x="66" y="180" width="24" height="0" rx="4" fill="#a7f3d0" opacity=".9"><animate attributeName="height" values="0;80;80;0" keyTimes="0;.4;.85;1" dur="5s" begin="-1.85s" repeatCount="indefinite"/><animate attributeName="y" values="180;100;100;180" keyTimes="0;.4;.85;1" dur="5s" begin="-1.85s" repeatCount="indefinite"/></rect>
+<rect x="102" y="180" width="24" height="0" rx="4" fill="#a7f3d0" opacity=".9"><animate attributeName="height" values="0;70;70;0" keyTimes="0;.4;.85;1" dur="5s" begin="-1.50s" repeatCount="indefinite"/><animate attributeName="y" values="180;110;110;180" keyTimes="0;.4;.85;1" dur="5s" begin="-1.50s" repeatCount="indefinite"/></rect>
+<rect x="138" y="180" width="24" height="0" rx="4" fill="#a7f3d0" opacity=".9"><animate attributeName="height" values="0;110;110;0" keyTimes="0;.4;.85;1" dur="5s" begin="-1.15s" repeatCount="indefinite"/><animate attributeName="y" values="180;70;70;180" keyTimes="0;.4;.85;1" dur="5s" begin="-1.15s" repeatCount="indefinite"/></rect>
+<rect x="174" y="180" width="24" height="0" rx="4" fill="#a7f3d0" opacity=".9"><animate attributeName="height" values="0;140;140;0" keyTimes="0;.4;.85;1" dur="5s" begin="-0.80s" repeatCount="indefinite"/><animate attributeName="y" values="180;40;40;180" keyTimes="0;.4;.85;1" dur="5s" begin="-0.80s" repeatCount="indefinite"/></rect>
+</g>
+</svg>

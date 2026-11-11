@@ -1,0 +1,6 @@
+# TODO: a ServiceMonitor (apiVersion monitoring.coreos.com/v1) that makes Prometheus scrape /metrics of all five Beanie Services.
+#   - it lives in the namespace monitoring (or beanie) and selects Services in the namespace beanie
+#   - the Services have a port named `http` (look at k8s/base)
+#   - path /metrics, interval 15s
+#   - honorLabels: true  <- find out why Beanie's metrics need it (hint: the label `service`; see "Prometheus targets" and query beanie_http_requests_total)
+#   - which label do the Services share that you can select on? (you may add one to k8s/base/*.yaml)

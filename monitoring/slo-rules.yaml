@@ -1,0 +1,10 @@
+# TODO: a PrometheusRule (apiVersion monitoring.coreos.com/v1) for this SLO:
+#
+#     "99% of the requests the gateway answers are not 5xx, measured over 30 days."
+#
+# 1. RECORDING rules (group "beanie-slo"): the gateway's 5xx error ratio over 5m and over 1h, for example
+#       record: beanie:gateway_error_ratio:rate5m      and     beanie:gateway_error_ratio:rate1h
+#    from beanie_http_requests_total{service="gateway"} with the status label.
+# 2. An ALERT with the label  team: beanie,  severity: page,  a `summary` annotation, `for: 1m`, that fires when BOTH windows
+#    burn the budget 14.4 times too fast:   ratio5m > 14.4 * 0.01  AND  ratio1h > 14.4 * 0.01
+#    (14.4 = how fast you would spend 2% of a 30-day budget in one hour).

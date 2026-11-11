@@ -1,0 +1,15 @@
+# TODO: Helm values for kube-prometheus-stack. Keep the stack small (this is a lab, not a bank).
+#
+# 1. prometheus.prometheusSpec:
+#      - retention: 6h
+#      - resources: requests cpu 200m / memory 400Mi, limits memory 1Gi
+#      - serviceMonitorSelectorNilUsesHelmValues: false     (otherwise Prometheus only looks at ServiceMonitors that carry the release label)
+#      - ruleSelectorNilUsesHelmValues: false               (same for rules)
+#      - podMonitorSelectorNilUsesHelmValues: false
+# 2. grafana: adminPassword (anything long; this is a lab), and keep the dashboards sidecar on (default).
+# 3. alertmanager.config: a route that sends alerts with the label team=beanie to a webhook receiver at
+#        http://alert-sink.monitoring.svc:9000/
+#    and everything else to a receiver that does nothing (the stack ships alerts of its own that are noise here).
+#    Use group_wait: 10s, group_interval: 1m, repeat_interval: 30m so the lab does not wait minutes.
+# 4. Switch off what a lab cluster cannot provide, or it fires alerts all day: kubeEtcd, kubeControllerManager,
+#    kubeScheduler, kubeProxy -> enabled: false
