@@ -2,9 +2,13 @@
 
 ## The situation
 
-Beanie has been live for two weeks. Last Tuesday menu started failing one request in two for forty minutes. Nobody noticed until a customer tweeted. The postmortem has one finding, and it is not "write better code": **nobody was looking, and nothing was watching for them.**
+Welcome. This is a long walk, so here is the map before the first step.
 
-You will build the watcher. First the plumbing: Prometheus must scrape every Beanie service, and Grafana must show what the customers feel. Then the part that matters: you will turn a sentence the business understands, *"99% of orders must work"*, into an **alert that pages a human within minutes when the budget for failure is burning too fast**, and never when it is not. And you will prove it the only honest way: by breaking menu on purpose and watching the page arrive.
+Beanie has been live for two weeks. Last Tuesday menu started failing one request in two for forty minutes, and nobody noticed until a customer tweeted. The postmortem has a single finding, and it is not "write better code": **nobody was looking, and nothing was watching for them.**
+
+The owner of the cafe asked a plain question afterwards: *"How do I know the ordering is good enough?"* It sounds simple and it is the hardest question in operations. This lab answers it in three movements. First the **plumbing**: Prometheus must scrape every Beanie service, and Grafana must show what the customers feel. Then the **promise**: you will turn a sentence the business understands, *"99% of orders must work"*, into a number you can spend, an **error budget**. Last the **alarm**: a rule that pages a human within minutes when the budget is burning too fast, and never when it is not. And you will prove it the only honest way: by breaking menu on purpose and watching the page arrive.
+
+Take your time, read each Think box, and stop to look at the graph after every Part.
 
 > **Your mission**
 > - Install the Prometheus stack (Prometheus, Alertmanager, Grafana) with Helm, with values you write
@@ -18,7 +22,7 @@ You will build the watcher. First the plumbing: Prometheus must scrape every Bea
 
 ---
 
-## Part 0 - Beanie, traffic and a receiver
+## Part 0 - First, the ground: Beanie, traffic and a receiver
 
 Fork this repository, clone your fork, and run:
 
